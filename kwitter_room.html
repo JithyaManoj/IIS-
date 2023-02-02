@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibadan International School Chat Room	</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> RULES </button>
+<center>
+		<h1 class="header">	
+			Ibadan International School Chat Room	
+			<sup>
+				<img src="m2.png">
+			</sup>
+		</h1>
+		<h2>READ THE RULES!</h2>
+		<h3  id="username"class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>#Add Room:</label>
+			<input id="roomname" type="text" class="form-control" placeholder="enter roomname" >
+		</div>
+		<button  onclick="addroom()"class="btn btn-success">#Add Room</button>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+		<div id="output" ></div>
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h4 class="modal-title">INSTRUCTIONS</h4>
+				  <button class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+				  <p>1.YOU MUST PUT YOUR REAL NAME AS YOUR USERNAME OR ELSE I WILL PERSONALLY BOLCK YOU FROM THIS WEB APP!</p>
+				  <br><br>
+				  <p>2.YOU MUST NEVER EVER WRITE INAPPROPRIATE THINGS HERE OR ELSE I WILL PERSONALLY BOLCK YOU FROM THIS WEB APP!</p>
+				  <br><br>
+				  <p>3.FYI WHAT EVER YOU TYPE OR WRITE I CAN SEE THEM AND EAISLY DELETE THEM!</p>
+				  <br><br>
+				  <p>4.IF YOU WANT TO ADD SOMETHING OR HAVE AND IDEA ON HOW TO IMPROVE THE WEB APP PLEASE CONTACT ME VIA EMAIL</p>
+				  <br><br>
+				  <p>5.YOU MUST HAVE A USERNAME OR ELSE I WILL PERSONALLY BOLCK YOU FROM THIS WEB APP!</p>
+				  <br><br>
+				  <p>MY EMAIL:manojkumar.j@ibadaninternationalschool.com</p>
+				  <br><br>
+				  <h1>THANK YOU</h1>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
